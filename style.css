@@ -1,0 +1,86 @@
+:root {
+    --main-bg: #0d1117;
+    --accent: #58a6ff;
+    --card-bg: #161b22;
+    --text: #c9d1d9;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--main-bg);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle, #1c2128 0%, #0d1117 100%);
+}
+
+.logo {
+    font-size: 6rem;
+    color: var(--accent);
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease;
+}
+
+.slogan { font-size: 1.4rem; color: #8b949e; max-width: 700px; margin: 0 auto; }
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    border: 1px solid #30363d;
+    transition: 0.3s;
+}
+
+.card:hover { border-color: var(--accent); transform: translateY(-5px); }
+
+.card i { font-size: 2.5rem; color: var(--accent); margin-bottom: 15px; }
+
+.contact-section { text-align: center; padding: 80px 20px; }
+
+.social-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.social-item {
+    text-decoration: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.telegram { background: #0088cc; }
+.instagram { background: #e1306c; }
+.snapchat { background: #fffc00; color: black; }
+.facebook { background: #1877f2; }
+
+.social-item:hover { opacity: 0.8; transform: scale(1.05); }
+
+footer { text-align: center; padding: 40px; border-top: 1px solid #30363d; color: #484f58; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
